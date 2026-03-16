@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Événements • Les Potes Ö Feu</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Special+Elite&family=Rajdhani:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="../Javascript/script.js" defer></script>
+</head>
+
+<body>
+      <!-- NAVBAR HUD -->
+  <header class="hud-navbar">
+    <div class="hud-nav-left">
+      <div class="hud-gauge">
+        <span class="gauge-label">FUEL</span>
+        <div class="gauge-bar">
+          <div class="gauge-fill"></div>
+        </div>
+      </div>
+      <div class="hud-gauge">
+        <span class="gauge-label">AMMO</span>
+        <div class="gauge-bar">
+          <div class="gauge-fill ammo"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VOYANTS GAUCHE -->
+    <div class="hud-voyants">
+      <div class="voyant green">
+        <span class="voyant-light"></span>
+        <span class="voyant-label">ONLINE</span>
+      </div>
+      <div class="voyant red">
+        <span class="voyant-light"></span>
+        <span class="voyant-label">THREAT</span>
+      </div>
+      <div class="voyant red">
+        <span class="voyant-light"></span>
+        <span class="voyant-label">ALERT</span>
+      </div>
+    </div>
+    <!-- CENTER -->
+    <nav class="hud-nav-center">
+      <a href="../index.html" class="hud-btn">
+        <i class="fas fa-crosshairs"></i>
+        <span>ACCUEIL</span>
+      </a>
+      <a href="apropos.html" class="hud-btn">
+        <i class="fas fa-users"></i>
+        <span>A PROPOS</span>
+      </a>
+      <a href="evenement.html" class="hud-btn">
+        <i class="fas fa-film"></i>
+        <span>ÉVÉNEMENTS</span>
+      </a>
+      <a href="reseau.html" class="hud-btn">
+        <i class="fas fa-wifi"></i>
+        <span>RÉSEAUX</span>
+      </a>
+    </nav>
+    <!-- BURGER -->
+    <button class="burger-btn" id="burgerBtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- MENU BURGER -->
+    <nav class="burger-menu" id="burgerMenu">
+      <a href="../index.html" class="hud-btn"><i class="fas fa-crosshairs"></i><span>ACCUEIL</span></a>
+      <a href="apropos.html" class="hud-btn"><i class="fas fa-users"></i><span>A PROPOS</span></a>
+      <a href="evenement.html" class="hud-btn"><i class="fas fa-film"></i><span>ÉVÉNEMENTS</span></a>
+      <a href="reseau.html" class="hud-btn"><i class="fas fa-satellite-dish"></i><span>RÉSEAUX</span></a>
+    </nav>
+
+    <!-- VOYANTS DROITE -->
+    <div class="hud-voyants">
+      <div class="voyant green">
+        <span class="voyant-light"></span>
+        <span class="voyant-label">COM</span>
+      </div>
+      <div class="voyant red clignotant">
+        <span class="voyant-light"></span>
+        <span class="voyant-label">ENG</span>
+      </div>
+      <div class="voyant yellow">
+        <span class="voyant-light"></span>
+        <span class="voyant-label">NAV</span>
+      </div>
+    </div>
+
+    <div class="hud-nav-right">
+      <div class="hud-clock" id="hudClock">00:00:00</div>
+      <div class="hud-coords">LAT: 48°51'N<br>LON: 2°21'E</div>
+    </div>
+  </header>
+
+    <main>
+        <section class="apropos">
+
+            <!-- ===== EN COURS ===== -->
+            <div class="section-header">
+                <p class="section-tag">⬡ RAPPORT OPÉRATIONNEL • EN DIRECT ⬡</p>
+                <h2 class="section-title">OPÉRATIONS EN COURS</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="apropos-grid evenement-grid">
+                <div class="apropos-card evenement-card actif">
+                    <div class="card-header">
+                        <i class="fas fa-fire"></i>
+                        <h3>TOURNOI CHILL MULTI</h3>
+                    </div>
+                    <div class="event-date">21 MARS 2026</div>
+                    <p> Partie Privée Interne Chaos organisé. ⚔️</p>
+                    <div class="event-badge interne">INTERNE</div>
+                </div>
+
+                <div class="apropos-card evenement-card actif">
+                    <div class="card-header">
+                        <i class="fas fa-globe"></i>
+                        <h3>TOURNOI REDCSEC</h3>
+                    </div>
+                    <div class="event-date">20 MARS 2026</div>
+                    <p>Tournoi Redsec payant avec PÖF monnaie. Que la meilleure équipe gagne... ou la plus chanceuse. 🔥
+                    </p>>
+                    <div class="event-badge interne">INTERNE</div>
+                </div>
+            </div>
+
+            <!-- ===== À VENIR ===== -->
+            <div class="section-header" style="margin-top: 60px;">
+                <p class="section-tag">⬡ OPÉRATIONS PLANIFIÉES ⬡</p>
+                <h2 class="section-title">À VENIR</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="apropos-grid">
+                <div class="apropos-card evenement-card">
+                    <div class="card-header">
+                        <i class="fas fa-crosshairs"></i>
+                        <h3>TOURNOI EXTERNE REDSEC</h3>
+                    </div>
+                    <div class="event-date">DATE <span class="censure">EN COURS DE PLANIFICATION</span></div>
+                    <p>Premier affrontement contre d'autres teams en Redsec. L'honneur de PÖF est en jeu. 🪖</p>
+                    <div class="event-badge externe">EXTERNE</div>
+                </div>
+
+                <div class="apropos-card evenement-card">
+                    <div class="card-header">
+                        <i class="fas fa-globe"></i>
+                        <h3>TOURNOI EXTERNE MULTI</h3>
+                    </div>
+                    <div class="event-date">DATE <span class="censure">EN COURS DE PLANIFICATION</span></div>
+                    <p>Tournoi Multi contre d'autres teams. Préparez vos meilleures excuses pour après. 😅</p>
+                    <div class="event-badge externe">EXTERNE</div>
+                </div>
+
+                <div class="apropos-card evenement-card">
+                    <div class="card-header">
+                        <i class="fas fa-question"></i>
+                        <h3>OPÉRATION <span class="censure">CLASSIFIÉE</span></h3>
+                    </div>
+                    <div class="event-date">DATE <span class="censure">CONFIDENTIELLE</span></div>
+                    <p>Quelque chose se prépare au quartier général... <span class="censure">les détails sont classifiés
+                            niveau 5</span>. Restez en alerte. 👀</p>
+                    <div class="event-badge preparation">EN PRÉPARATION</div>
+                </div>
+            </div>
+
+            <!-- ===== PASSÉS ===== -->
+            <div class="section-header" style="margin-top: 60px;">
+                <p class="section-tag">⬡ ARCHIVES OPÉRATIONNELLES ⬡</p>
+                <h2 class="section-title">OPÉRATIONS PASSÉES</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="apropos-grid">
+                <div class="apropos-card evenement-card termine">
+                    <div class="card-header">
+                        <i class="fas fa-check"></i>
+                        <h3>TOURNOI MULTI </h3>
+                    </div>
+                    <div class="event-date">14 MARS 2026 </div>
+                    <p>Tournoi Multi chill toutes équipes. Gloire et honneur pour les survivants. ⚔️</p>
+                    <div class="event-badge interne">INTERNE</div>
+                </div>
+
+                <div class="apropos-card evenement-card termine">
+                    <div class="card-header">
+                        <i class="fas fa-check"></i>
+                        <h3>TOURNOI REDSEC</h3>
+                    </div>
+                    <div class="event-date">13 MARS 2026</div>
+                    <p>Tournoi Redsec payant avec monnaie PÖF. Que le meilleur gagne... ou le plus chanceux. 🔥</p>>
+                    <div class="event-badge interne">INTERNE</div>
+                </div>
+
+                <div class="apropos-card evenement-card termine">
+                    <div class="card-header">
+                        <i class="fas fa-check"></i>
+                        <h3>TOURNOI CHILL REDSEC</h3>
+                    </div>
+                    <div class="event-date">13 FÉVRIER 2026</div>
+                    <p>Tournoi chill Redsec avec équipes aléatoires. Bonne ambiance garantie. 🎮</p>
+                    <div class="event-badge interne">INTERNE</div>
+                </div>
+
+                <div class="apropos-card evenement-card termine">
+                    <div class="card-header">
+                        <i class="fas fa-check"></i>
+                        <h3>PARTIE PRIVÉE</h3>
+                    </div>
+                    <div class="event-date">14 FÉVRIER 2026</div>
+                    <p>Partie privée entre membres. Saint-Valentin version PÖF, entre potes avec des flingues. ❤️</p>
+                    <div class="event-badge interne">INTERNE</div>
+                </div>
+
+                <div class="apropos-card evenement-card termine">
+                    <div class="card-header">
+                        <i class="fas fa-check"></i>
+                        <h3>TOURNOI MULTI</h3>
+                    </div>
+                    <div class="event-date">21 FÉVRIER 2026</div>
+                    <p>Tournoi Multi toutes équipes. Chaos organisé. ⚔️</p>
+                    <div class="event-badge interne">INTERNE</div>
+                </div>
+
+                <div class="apropos-card evenement-card termine">
+                    <div class="card-header">
+                        <i class="fas fa-check"></i>
+                        <h3>TOURNOI REDSEC PAYANT</h3>
+                    </div>
+                    <div class="event-date">27 FÉVRIER 2026</div>
+                    <p>Premier tournoi Redsec payant avec monnaie PÖF. Les galons se méritent. 🫵</p>
+                    <div class="event-badge interne">INTERNE</div>
+                </div>
+
+                <div class="apropos-card evenement-card termine">
+                    <div class="card-header">
+                        <i class="fas fa-check"></i>
+                        <h3>TOURNOI CHILL REDSEC</h3>
+                    </div>
+                    <div class="event-date">06 MARS 2026</div>
+                    <p>Deuxième tournoi chill Redsec équipes aléatoires. On apprend de ses erreurs... ou pas. 😂</p>
+                    <div class="event-badge interne">INTERNE</div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <a href="reseau.html" class="footer-reseaux">
+                <i class="fab fa-facebook"></i>
+                REJOINS NOUS SUR FACEBOOK
+            </a>
+        </div>
+        <div class="footer-content">
+            <a href="reseau.html" class="footer-reseaux">
+                <i class="fab fa-discord"></i>
+                REJOINS NOUS SUR DISCORD
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

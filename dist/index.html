@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>Les Potes Ö Feu</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Special+Elite&family=Rajdhani:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="Javascript/script.js" defer></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Bazigdp0.css">
+</head>
+
+<body>
+  <!-- HUD CONNEXION -->
+  <div class="hud-overlay" id="hudOverlay">
+    <div class="hud-box" id="hudBox">
+      <p class="hud-titre">⬡ SYSTÈME DE COMMANDEMENT PÖF ⬡</p>
+      <p class="hud-text" id="hudText"></p>
+      <div class="hud-bar">
+        <div class="hud-progress" id="hudProgress"></div>
+      </div>
+    </div>
+  </div>
+  <!-- HEADER / NAVBAR -->
+  <!-- NAVBAR HUD -->
+  <header class="hud-navbar">
+    <div class="hud-nav-left">
+      <div class="hud-gauge">
+        <span class="gauge-label">FUEL</span>
+        <div class="gauge-bar">
+          <div class="gauge-fill"></div>
+        </div>
+      </div>
+      <div class="hud-gauge">
+        <span class="gauge-label">AMMO</span>
+        <div class="gauge-bar">
+          <div class="gauge-fill ammo"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VOYANTS GAUCHE -->
+    <div class="hud-voyants">
+      <div class="voyant green">
+        <span class="voyant-light"></span>
+        <span class="voyant-label">ONLINE</span>
+      </div>
+      <div class="voyant red">
+        <span class="voyant-light"></span>
+        <span class="voyant-label">THREAT</span>
+      </div>
+      <div class="voyant red">
+        <span class="voyant-light"></span>
+        <span class="voyant-label">ALERT</span>
+      </div>
+    </div>
+    <!-- CENTER -->
+    <nav class="hud-nav-center">
+      <a href="index.html" class="hud-btn">
+        <i class="fas fa-crosshairs"></i>
+        <span>ACCUEIL</span>
+      </a>
+      <a href="Pages/apropos.html" class="hud-btn">
+        <i class="fas fa-users"></i>
+        <span>A PROPOS</span>
+      </a>
+      <a href="Pages/evenement.html" class="hud-btn">
+        <i class="fas fa-film"></i>
+        <span>ÉVÉNEMENTS</span>
+      </a>
+      <a href="Pages/reseau.html" class="hud-btn">
+        <i class="fas fa-wifi"></i>
+        <span>RÉSEAUX</span>
+      </a>
+    </nav>
+
+    <!-- VOYANTS DROITE -->
+    <div class="hud-voyants">
+      <div class="voyant green">
+        <span class="voyant-light"></span>
+        <span class="voyant-label">COM</span>
+      </div>
+      <div class="voyant red clignotant">
+        <span class="voyant-light"></span>
+        <span class="voyant-label">ENG</span>
+      </div>
+      <div class="voyant yellow">
+        <span class="voyant-light"></span>
+        <span class="voyant-label">NAV</span>
+      </div>
+    </div>
+
+    <div class="hud-nav-right">
+      <div class="hud-clock" id="hudClock">00:00:00</div>
+      <div class="hud-coords">LAT: 48°51'N<br>LON: 2°21'E</div>
+    </div>
+  </header>
+  <!-- MAIN -->
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <canvas id="radarCanvas"></canvas>
+      <div class="hero-content">
+        <div class="logo">
+          <img src="/assets/logopfor-D0HWTMdE.png" alt="Logo les Potes Ö Feu">
+        </div>
+        <p class="clan-tag">💀 ESCOUADE PÖF • BATTLEFIELD • ZÉRO PRISE DE TÊTE 💀</p>
+        <h1 class="hero-title">Les Potes Ö Feu</h1>
+        <p class="hero-subtitle">ARTICLE 1 : ON RIT. ARTICLE 2 : VOIR ARTICLE 1 ☠️</p>
+        <a href="/Pages/reseau.html" class="btn-join">Rejoindre les rangs</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+        <a href="Pages/reseau.html" class="footer-reseaux">
+            <i class="fab fa-facebook"></i>
+            REJOINS NOUS SUR FACEBOOK
+        </a>
+      </div>
+      <div class="footer-content">
+        <a href="Pages/reseau.html" class="footer-reseaux">
+            <i class="fab fa-discord"></i>
+            REJOINS NOUS SUR DISCORD
+        </a>
+      </div>
+  </footer>
+
+</body>
+
+</html>

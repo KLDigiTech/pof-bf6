@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Les Potes Ö Feu</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Special+Elite&family=Rajdhani:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="../Javascript/script.js" defer></script>
+</head>
+
+<body>
+    <!-- HEADER / NAVBAR -->
+    <!-- NAVBAR HUD -->
+    <header class="hud-navbar">
+        <div class="hud-nav-left">
+            <div class="hud-gauge">
+                <span class="gauge-label">FUEL</span>
+                <div class="gauge-bar">
+                    <div class="gauge-fill"></div>
+                </div>
+            </div>
+            <div class="hud-gauge">
+                <span class="gauge-label">AMMO</span>
+                <div class="gauge-bar">
+                    <div class="gauge-fill ammo"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VOYANTS GAUCHE -->
+        <div class="hud-voyants">
+            <div class="voyant green">
+                <span class="voyant-light"></span>
+                <span class="voyant-label">ONLINE</span>
+            </div>
+            <div class="voyant red">
+                <span class="voyant-light"></span>
+                <span class="voyant-label">THREAT</span>
+            </div>
+            <div class="voyant red">
+                <span class="voyant-light"></span>
+                <span class="voyant-label">ALERT</span>
+            </div>
+        </div>
+        <!-- CENTER -->
+        <nav class="hud-nav-center">
+            <a href="../index.html" class="hud-btn">
+                <i class="fas fa-crosshairs"></i>
+                <span>ACCUEIL</span>
+            </a>
+            <a href="apropos.html" class="hud-btn">
+                <i class="fas fa-users"></i>
+                <span>A PROPOS</span>
+            </a>
+            <a href="evenement.html" class="hud-btn">
+                <i class="fas fa-film"></i>
+                <span>ÉVÉNEMENTS</span>
+            </a>
+            <a href="reseau.html" class="hud-btn">
+                <i class="fas fa-wifi"></i>
+                <span>RÉSEAUX</span>
+            </a>
+        </nav>
+        <!-- BURGER - visible uniquement mobile -->
+        <button class="burger-btn" id="burgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- MENU BURGER -->
+        <nav class="burger-menu" id="burgerMenu">
+            <a href="../index.html" class="hud-btn"><i class="fas fa-crosshairs"></i><span>ACCUEIL</span></a>
+            <a href="apropos.html" class="hud-btn"><i class="fas fa-users"></i><span>A PROPOS</span></a>
+            <a href="evenement.html" class="hud-btn"><i class="fas fa-film"></i><span>EVENEMENTS</span></a>
+            <a href="reseaux.html" class="hud-btn"><i class="fas fa-satellite-dish"></i><span>RÉSEAUX</span></a>
+        </nav>
+
+        <!-- VOYANTS DROITE -->
+        <div class="hud-voyants">
+            <div class="voyant green">
+                <span class="voyant-light"></span>
+                <span class="voyant-label">COM</span>
+            </div>
+            <div class="voyant red clignotant">
+                <span class="voyant-light"></span>
+                <span class="voyant-label">ENG</span>
+            </div>
+            <div class="voyant yellow">
+                <span class="voyant-light"></span>
+                <span class="voyant-label">NAV</span>
+            </div>
+        </div>
+
+        <div class="hud-nav-right">
+            <div class="hud-clock" id="hudClock">00:00:00</div>
+            <div class="hud-coords">LAT: 48°51'N<br>LON: 2°21'E</div>
+        </div>
+    </header>
+    <main>
+        <section class="discord-page">
+
+            <!-- TITRE -->
+            <div class="discord-titre">
+                <img src="../Logo/blason-removebg-preview.png" alt="Blason" class="discord-blason">
+                <h2 class="section-title">LES POTES Ö FEU</h2>
+            </div>
+
+            <!-- CONTENU -->
+            <div class="discord-contenu">
+                <!-- GAUCHE : RADAR -->
+                <div class="discord-left">
+                    <p class="section-tag">⬡ SURVEILLANCE ACTIVE ⬡</p>
+                    <canvas id="radarDiscord" width="400" height="400"></canvas>
+                    <p class="radar-label">MEMBRES EN LIGNE</p>
+                    <p class="radar-count" id="compteurEnLigne">--</p>
+                </div>
+
+                <!-- DROITE : TEXTE + BOUTON -->
+                <div class="discord-right">
+                    <p class="discord-desc">Rejoins le serveur Discord des Potes Ö Feu.<br>Rejoins le groupe Facebook
+                        des Potes Ö Feu.<br>Présente toi, trouve une
+                        escouade et prépare toi au combat.</p>
+                    <a href="https://discord.gg/a97B2ddN" target="_blank" class="btn-discord">
+                        <i class="fab fa-discord"></i>
+                        REJOINDRE LE DISCORD
+                    </a>
+                    <a href="https://www.facebook.com/share/g/1GUQLLA5Vd/?mibextid=wwXIfr" target="_blank"
+                        class="btn-discord">
+                        <i class="fab fa-facebook"></i>
+                        REJOINDRE LE FACEBOOK
+                    </a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
