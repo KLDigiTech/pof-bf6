@@ -1428,13 +1428,16 @@ footer {
     /* FOOTER */
     footer {
         flex-direction: column;
-        gap: 10px;
-        padding: 10px;
+        gap: 8px;
+        padding: 10px 15px;
+    }
+    .footer-content{
+        width: 100%;
+        justify-content: center;
     }
     .footer-reseaux {
-        font-size: 0.6rem;
-        letter-spacing: 1px;
-        padding: 5px 10px;
+        width: 100%;
+        justify-content: center;
     }
 
     /* RESEAUX PAGE */
