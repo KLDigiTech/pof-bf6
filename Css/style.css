@@ -923,6 +923,8 @@ main {
 
 footer {
     flex-shrink: 0;
+    position: sticky;
+    bottom: 0;
     background: rgba(5, 10, 5, 0.95);
     border-top: 2px solid #4a7c59;
     padding: 12px 40px;
