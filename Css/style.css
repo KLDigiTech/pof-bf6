@@ -1020,8 +1020,6 @@ footer {
 
 .burger-menu {
     display: none;
-}
-.burger-menu {
     pointer-events: none;
 }
 

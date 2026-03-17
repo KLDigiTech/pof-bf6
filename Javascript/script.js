@@ -196,7 +196,6 @@ if (discordSection) {
         .then(data => {
             const enLigne = data.presence_count || 0;
             document.getElementById('compteurEnLigne').textContent = enLigne;
-lancerRadarDiscord(enLigne);
             lancerRadarDiscord(enLigne);
         })
         .catch(() => {
