@@ -168,7 +168,7 @@ function lancerRadar() {
 // ===== ACTIVE NAV =====
 const liens = document.querySelectorAll('.hud-btn');
 let pageCourante = window.location.pathname.split('/').pop();
-if (pageCourante === '' || pageCourante === '/') pageCourante = 'index.html';
+if (pageCourante === '' || pageCourante === '/' || pageCourante === 'index.html') pageCourante = 'index.html';
 
 liens.forEach(lien => {
     lien.classList.remove('active');
