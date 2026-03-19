@@ -166,21 +166,20 @@ function lancerRadar() {
 }
 
 // ===== ACTIVE NAV =====
-const liens = document.querySelectorAll('.hud-btn');
-const pathname = window.location.pathname;
-const fichierCourant = pathname.split('/').pop() || 'index.html';
-
-liens.forEach(lien => {
-    const href = lien.getAttribute('href');
-    if (!href) return;
-    const fichierHref = href.split('/').pop();
-    
-    if (fichierHref === fichierCourant) {
-        lien.classList.add('active');
-    } else {
-        lien.classList.remove('active');
-    }
-});
+function setActiveNav() {
+    const fichierCourant = window.location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.hud-btn').forEach(lien => {
+        const href = lien.getAttribute('href');
+        if (!href) return;
+        const fichierHref = href.split('/').pop();
+        if (fichierHref === fichierCourant) {
+            lien.classList.add('active');
+        } else {
+            lien.classList.remove('active');
+        }
+    });
+}
+document.addEventListener('DOMContentLoaded', setActiveNav);
 
 // ===== HORLOGE MILITAIRE =====
 function mettreAjourHorloge() {
