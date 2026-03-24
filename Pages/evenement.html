@@ -14,93 +14,93 @@
 </head>
 
 <body>
-      <!-- NAVBAR HUD -->
-  <header class="hud-navbar">
-    <div class="hud-nav-left">
-      <div class="hud-gauge">
-        <span class="gauge-label">FUEL</span>
-        <div class="gauge-bar">
-          <div class="gauge-fill"></div>
+    <!-- NAVBAR HUD -->
+    <header class="hud-navbar">
+        <div class="hud-nav-left">
+            <div class="hud-gauge">
+                <span class="gauge-label">FUEL</span>
+                <div class="gauge-bar">
+                    <div class="gauge-fill"></div>
+                </div>
+            </div>
+            <div class="hud-gauge">
+                <span class="gauge-label">AMMO</span>
+                <div class="gauge-bar">
+                    <div class="gauge-fill ammo"></div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="hud-gauge">
-        <span class="gauge-label">AMMO</span>
-        <div class="gauge-bar">
-          <div class="gauge-fill ammo"></div>
+
+        <!-- VOYANTS GAUCHE -->
+        <div class="hud-voyants">
+            <div class="voyant green">
+                <span class="voyant-light"></span>
+                <span class="voyant-label">ONLINE</span>
+            </div>
+            <div class="voyant red">
+                <span class="voyant-light"></span>
+                <span class="voyant-label">THREAT</span>
+            </div>
+            <div class="voyant red">
+                <span class="voyant-light"></span>
+                <span class="voyant-label">ALERT</span>
+            </div>
         </div>
-      </div>
-    </div>
+        <!-- CENTER -->
+        <nav class="hud-nav-center">
+            <a href="../index.html" class="hud-btn">
+                <i class="fas fa-crosshairs"></i>
+                <span>ACCUEIL</span>
+            </a>
+            <a href="apropos.html" class="hud-btn">
+                <i class="fas fa-users"></i>
+                <span>A PROPOS</span>
+            </a>
+            <a href="evenement.html" class="hud-btn active">
+                <i class="fas fa-film"></i>
+                <span>ÉVÉNEMENTS</span>
+            </a>
+            <a href="reseau.html" class="hud-btn">
+                <i class="fas fa-wifi"></i>
+                <span>RÉSEAUX</span>
+            </a>
+        </nav>
+        <!-- BURGER -->
+        <button class="burger-btn" id="burgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
-    <!-- VOYANTS GAUCHE -->
-    <div class="hud-voyants">
-      <div class="voyant green">
-        <span class="voyant-light"></span>
-        <span class="voyant-label">ONLINE</span>
-      </div>
-      <div class="voyant red">
-        <span class="voyant-light"></span>
-        <span class="voyant-label">THREAT</span>
-      </div>
-      <div class="voyant red">
-        <span class="voyant-light"></span>
-        <span class="voyant-label">ALERT</span>
-      </div>
-    </div>
-    <!-- CENTER -->
-    <nav class="hud-nav-center">
-      <a href="../index.html" class="hud-btn">
-        <i class="fas fa-crosshairs"></i>
-        <span>ACCUEIL</span>
-      </a>
-      <a href="apropos.html" class="hud-btn">
-        <i class="fas fa-users"></i>
-        <span>A PROPOS</span>
-      </a>
-      <a href="evenement.html" class="hud-btn active">
-        <i class="fas fa-film"></i>
-        <span>ÉVÉNEMENTS</span>
-      </a>
-      <a href="reseau.html" class="hud-btn">
-        <i class="fas fa-wifi"></i>
-        <span>RÉSEAUX</span>
-      </a>
-    </nav>
-    <!-- BURGER -->
-    <button class="burger-btn" id="burgerBtn">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+        <!-- MENU BURGER -->
+        <nav class="burger-menu" id="burgerMenu">
+            <a href="../index.html" class="hud-btn"><i class="fas fa-crosshairs"></i><span>ACCUEIL</span></a>
+            <a href="apropos.html" class="hud-btn"><i class="fas fa-users"></i><span>A PROPOS</span></a>
+            <a href="evenement.html" class="hud-btn active"><i class="fas fa-film"></i><span>ÉVÉNEMENTS</span></a>
+            <a href="reseau.html" class="hud-btn"><i class="fas fa-satellite-dish"></i><span>RÉSEAUX</span></a>
+        </nav>
 
-    <!-- MENU BURGER -->
-    <nav class="burger-menu" id="burgerMenu">
-      <a href="../index.html" class="hud-btn"><i class="fas fa-crosshairs"></i><span>ACCUEIL</span></a>
-      <a href="apropos.html" class="hud-btn"><i class="fas fa-users"></i><span>A PROPOS</span></a>
-      <a href="evenement.html" class="hud-btn active"><i class="fas fa-film"></i><span>ÉVÉNEMENTS</span></a>
-      <a href="reseau.html" class="hud-btn"><i class="fas fa-satellite-dish"></i><span>RÉSEAUX</span></a>
-    </nav>
+        <!-- VOYANTS DROITE -->
+        <div class="hud-voyants">
+            <div class="voyant green">
+                <span class="voyant-light"></span>
+                <span class="voyant-label">COM</span>
+            </div>
+            <div class="voyant red clignotant">
+                <span class="voyant-light"></span>
+                <span class="voyant-label">ENG</span>
+            </div>
+            <div class="voyant yellow">
+                <span class="voyant-light"></span>
+                <span class="voyant-label">NAV</span>
+            </div>
+        </div>
 
-    <!-- VOYANTS DROITE -->
-    <div class="hud-voyants">
-      <div class="voyant green">
-        <span class="voyant-light"></span>
-        <span class="voyant-label">COM</span>
-      </div>
-      <div class="voyant red clignotant">
-        <span class="voyant-light"></span>
-        <span class="voyant-label">ENG</span>
-      </div>
-      <div class="voyant yellow">
-        <span class="voyant-light"></span>
-        <span class="voyant-label">NAV</span>
-      </div>
-    </div>
-
-    <div class="hud-nav-right">
-      <div class="hud-clock" id="hudClock">00:00:00</div>
-      <div class="hud-coords">LAT: 48°51'N<br>LON: 2°21'E</div>
-    </div>
-  </header>
+        <div class="hud-nav-right">
+            <div class="hud-clock" id="hudClock">00:00:00</div>
+            <div class="hud-coords">LAT: 48°51'N<br>LON: 2°21'E</div>
+        </div>
+    </header>
 
     <main>
         <section class="apropos">
@@ -116,23 +116,21 @@
                 <div class="apropos-card evenement-card actif">
                     <div class="card-header">
                         <i class="fas fa-fire"></i>
-                        <h3>TOURNOI CHILL MULTI</h3>
+                        <h3>TOURNOI REDCSEC ALEATOIRE CHILL</h3>
                     </div>
-                    <div class="event-date">21 MARS 2026</div>
-                    <p> Partie Privée Avec la Team P.H.A.N.T.O.M, Chaos Organisé. ⚔️</p>
-                    <img src="../Evenements/Tournoi-Phantom.png" alt="Affiche Tournoi" style="width: 100%; border-radius:8px; margin:10px 0;">
+                    <div class="event-date">27 Mars 2026</div>
+                    <p>🔥 Tournoi chill Redsec équipes aléatoires ! En Partenariat Avec la TEAM VoG 🔥</p>
                     <div class="event-badge externe">EXTERNE</div>
                 </div>
 
                 <div class="apropos-card evenement-card actif">
                     <div class="card-header">
                         <i class="fas fa-globe"></i>
-                        <h3>TOURNOI REDCSEC</h3>
+                        <h3>PARTIE PRIVÉE MULTIJOUEURS</h3>
                     </div>
-                    <div class="event-date">20 MARS 2026</div>
-                    <p>Tournoi Redsec payant avec PÖF monnaie. Que la meilleure équipe gagne... ou la plus chanceuse. 🔥</p>
-                    <img src="../Evenements/redsec.jpg" alt="Affiche Tournoi" style="width: 100%; border-radius:8px; margin:10px 0;">
-                    <div class="event-badge interne">INTERNE</div>
+                    <div class="event-date">28 Mars 2026</div>
+                    <p>⚔️ Partie Privée Multi ! En Partenariat Avec la TEAM PHANTOM ⚔️</p>
+                    <div class="event-badge interne">EXTERNE</div>
                 </div>
             </div>
 
@@ -184,6 +182,29 @@
             </div>
 
             <div class="apropos-grid">
+                <div class="apropos-card evenement-card termine">
+                    <div class="card-header">
+                        <i class="fas fa-check"></i>
+                        <h3>TOURNOI MULTI </h3>
+                    </div>
+                    <div class="event-date">21 MARS 2026</div>
+                    <p> Partie Privée Avec la Team P.H.A.N.T.O.M, Chaos Organisé. ⚔️</p>
+                    <img src="../Evenements/Tournoi-Phantom.png" alt="Affiche Tournoi"
+                        style="width: 100%; border-radius:8px; margin:10px 0;">
+                    <div class="event-badge interne">EXTERNE</div>
+                </div>
+
+                <div class="apropos-card evenement-card termine">
+                    <div class="card-header">
+                        <i class="fas fa-check"></i>
+                        <h3>TOURNOI REDCSEC</h3>
+                    </div>
+                    <div class="event-date">20 MARS 2026</div>
+                    <p>Tournoi Redsec payant avec PÖF monnaie. Que la meilleure équipe gagne... ou la plus chanceuse. 🔥</p>
+                    <img src="../Evenements/redsec.jpg" alt="Affiche Tournoi"
+                        style="width: 100%; border-radius:8px; margin:10px 0;">
+                    <div class="event-badge interne">INTERNE</div>
+                </div>
                 <div class="apropos-card evenement-card termine">
                     <div class="card-header">
                         <i class="fas fa-check"></i>
