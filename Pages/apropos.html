@@ -14,93 +14,93 @@
 </head>
 
 <body>
-  <!-- NAVBAR HUD -->
-  <header class="hud-navbar">
-    <div class="hud-nav-left">
-      <div class="hud-gauge">
-        <span class="gauge-label">FUEL</span>
-        <div class="gauge-bar">
-          <div class="gauge-fill"></div>
+    <!-- NAVBAR HUD -->
+    <header class="hud-navbar">
+        <div class="hud-nav-left">
+            <div class="hud-gauge">
+                <span class="gauge-label">FUEL</span>
+                <div class="gauge-bar">
+                    <div class="gauge-fill"></div>
+                </div>
+            </div>
+            <div class="hud-gauge">
+                <span class="gauge-label">AMMO</span>
+                <div class="gauge-bar">
+                    <div class="gauge-fill ammo"></div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="hud-gauge">
-        <span class="gauge-label">AMMO</span>
-        <div class="gauge-bar">
-          <div class="gauge-fill ammo"></div>
+
+        <!-- VOYANTS GAUCHE -->
+        <div class="hud-voyants">
+            <div class="voyant green">
+                <span class="voyant-light"></span>
+                <span class="voyant-label">ONLINE</span>
+            </div>
+            <div class="voyant red">
+                <span class="voyant-light"></span>
+                <span class="voyant-label">THREAT</span>
+            </div>
+            <div class="voyant red">
+                <span class="voyant-light"></span>
+                <span class="voyant-label">ALERT</span>
+            </div>
         </div>
-      </div>
-    </div>
+        <!-- CENTER -->
+        <nav class="hud-nav-center">
+            <a href="../index.html" class="hud-btn">
+                <i class="fas fa-crosshairs"></i>
+                <span>ACCUEIL</span>
+            </a>
+            <a href="apropos.html" class="hud-btn active">
+                <i class="fas fa-users"></i>
+                <span>A PROPOS</span>
+            </a>
+            <a href="evenement.html" class="hud-btn">
+                <i class="fas fa-film"></i>
+                <span>ÉVÉNEMENTS</span>
+            </a>
+            <a href="reseau.html" class="hud-btn">
+                <i class="fas fa-wifi"></i>
+                <span>RÉSEAUX</span>
+            </a>
+        </nav>
+        <!-- BURGER -->
+        <button class="burger-btn" id="burgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
-    <!-- VOYANTS GAUCHE -->
-    <div class="hud-voyants">
-      <div class="voyant green">
-        <span class="voyant-light"></span>
-        <span class="voyant-label">ONLINE</span>
-      </div>
-      <div class="voyant red">
-        <span class="voyant-light"></span>
-        <span class="voyant-label">THREAT</span>
-      </div>
-      <div class="voyant red">
-        <span class="voyant-light"></span>
-        <span class="voyant-label">ALERT</span>
-      </div>
-    </div>
-    <!-- CENTER -->
-    <nav class="hud-nav-center">
-      <a href="../index.html" class="hud-btn">
-        <i class="fas fa-crosshairs"></i>
-        <span>ACCUEIL</span>
-      </a>
-      <a href="apropos.html" class="hud-btn active">
-        <i class="fas fa-users"></i>
-        <span>A PROPOS</span>
-      </a>
-      <a href="evenement.html" class="hud-btn">
-        <i class="fas fa-film"></i>
-        <span>ÉVÉNEMENTS</span>
-      </a>
-      <a href="reseau.html" class="hud-btn">
-        <i class="fas fa-wifi"></i>
-        <span>RÉSEAUX</span>
-      </a>
-    </nav>
-    <!-- BURGER -->
-    <button class="burger-btn" id="burgerBtn">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+        <!-- MENU BURGER -->
+        <nav class="burger-menu" id="burgerMenu">
+            <a href="../index.html" class="hud-btn"><i class="fas fa-crosshairs"></i><span>ACCUEIL</span></a>
+            <a href="apropos.html" class="hud-btn active"><i class="fas fa-users"></i><span>A PROPOS</span></a>
+            <a href="evenement.html" class="hud-btn"><i class="fas fa-film"></i><span>EVENEMENTS</span></a>
+            <a href="reseau.html" class="hud-btn"><i class="fas fa-satellite-dish"></i><span>RÉSEAUX</span></a>
+        </nav>
 
-    <!-- MENU BURGER -->
-    <nav class="burger-menu" id="burgerMenu">
-      <a href="../index.html" class="hud-btn"><i class="fas fa-crosshairs"></i><span>ACCUEIL</span></a>
-      <a href="apropos.html" class="hud-btn active"><i class="fas fa-users"></i><span>A PROPOS</span></a>
-      <a href="evenement.html" class="hud-btn"><i class="fas fa-film"></i><span>EVENEMENTS</span></a>
-      <a href="reseau.html" class="hud-btn"><i class="fas fa-satellite-dish"></i><span>RÉSEAUX</span></a>
-    </nav>
+        <!-- VOYANTS DROITE -->
+        <div class="hud-voyants">
+            <div class="voyant green">
+                <span class="voyant-light"></span>
+                <span class="voyant-label">COM</span>
+            </div>
+            <div class="voyant red clignotant">
+                <span class="voyant-light"></span>
+                <span class="voyant-label">ENG</span>
+            </div>
+            <div class="voyant yellow">
+                <span class="voyant-light"></span>
+                <span class="voyant-label">NAV</span>
+            </div>
+        </div>
 
-    <!-- VOYANTS DROITE -->
-    <div class="hud-voyants">
-      <div class="voyant green">
-        <span class="voyant-light"></span>
-        <span class="voyant-label">COM</span>
-      </div>
-      <div class="voyant red clignotant">
-        <span class="voyant-light"></span>
-        <span class="voyant-label">ENG</span>
-      </div>
-      <div class="voyant yellow">
-        <span class="voyant-light"></span>
-        <span class="voyant-label">NAV</span>
-      </div>
-    </div>
-
-    <div class="hud-nav-right">
-      <div class="hud-clock" id="hudClock">00:00:00</div>
-      <div class="hud-coords">LAT: 48°51'N<br>LON: 2°21'E</div>
-    </div>
-  </header>
+        <div class="hud-nav-right">
+            <div class="hud-clock" id="hudClock">00:00:00</div>
+            <div class="hud-coords">LAT: 48°51'N<br>LON: 2°21'E</div>
+        </div>
+    </header>
 
     <main>
         <section class="apropos">
