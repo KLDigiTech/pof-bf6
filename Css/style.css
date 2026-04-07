@@ -636,7 +636,7 @@ main {
     text-transform: uppercase;
     white-space: nowrap;
     display: inline-block;
-    animation: ticker 12s linear infinite;
+    animation: ticker 10s linear infinite;
 }
 
 @keyframes ticker {
