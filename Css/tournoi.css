@@ -1,0 +1,224 @@
+/* ========== TOURNOI — Style HUD PöF ========== */
+
+.tournoi-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.tournoi-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.tournoi-header h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 8px;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.tournoi-header p {
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+    color: #4a7c59;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.live-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #4a7c59;
+    padding: 4px 16px;
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    color: #00ff41;
+    text-transform: uppercase;
+    background: rgba(0, 255, 65, 0.05);
+}
+
+.live-dot {
+    width: 8px;
+    height: 8px;
+    background: #00ff41;
+    border-radius: 50%;
+    box-shadow: 0 0 6px #00ff41;
+    animation: voyant 1.5s steps(1) infinite;
+}
+
+/* ========== STATS GLOBALES ========== */
+.global-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: rgba(0, 20, 0, 0.5);
+    border: 1px solid rgba(74, 124, 89, 0.4);
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    border-color: #00ff41;
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.15);
+}
+
+.stat-card .value {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #00ff41;
+    text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+}
+
+.stat-card .label {
+    font-size: 0.7rem;
+    letter-spacing: 4px;
+    color: #4a7c59;
+    text-transform: uppercase;
+    margin-top: 4px;
+}
+
+/* ========== LEADERBOARD ========== */
+.leaderboard {
+    background: rgba(0, 20, 0, 0.5);
+    border: 1px solid rgba(74, 124, 89, 0.4);
+    overflow: hidden;
+}
+
+.leaderboard-header {
+    display: grid;
+    grid-template-columns: 60px 1fr 100px 100px 100px;
+    padding: 0.8rem 1.5rem;
+    background: rgba(74, 124, 89, 0.1);
+    border-bottom: 1px solid rgba(74, 124, 89, 0.4);
+    font-size: 0.7rem;
+    color: #4a7c59;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.leaderboard-row {
+    display: grid;
+    grid-template-columns: 60px 1fr 100px 100px 100px;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid rgba(74, 124, 89, 0.15);
+    align-items: center;
+    transition: background 0.2s;
+}
+
+.leaderboard-row:hover {
+    background: rgba(0, 255, 65, 0.03);
+}
+
+.leaderboard-row:last-child {
+    border-bottom: none;
+}
+
+.rank {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #4a7c59;
+    letter-spacing: 2px;
+}
+
+.rank.gold { color: #FFD700; text-shadow: 0 0 8px rgba(255, 215, 0, 0.5); }
+.rank.silver { color: #C0C0C0; }
+.rank.bronze { color: #CD7F32; }
+
+.player-name {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: var(--text-primary);
+    text-transform: uppercase;
+}
+
+.platform-badge {
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+    color: #4a7c59;
+    margin-left: 10px;
+    border: 1px solid rgba(74, 124, 89, 0.4);
+    padding: 1px 6px;
+}
+
+.stat {
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--text-primary);
+}
+
+.stat.kd {
+    color: #00ff41;
+    font-size: 1.1rem;
+    text-shadow: 0 0 8px rgba(0, 255, 65, 0.4);
+}
+
+/* ========== LOADING ========== */
+.loading {
+    text-align: center;
+    padding: 3rem;
+    color: #4a7c59;
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.loading-spinner {
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(74, 124, 89, 0.3);
+    border-top-color: #00ff41;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem;
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.no-players {
+    text-align: center;
+    padding: 3rem;
+    color: #4a7c59;
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.refresh-info {
+    text-align: center;
+    color: #4a7c59;
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 600px) {
+    .leaderboard-header,
+    .leaderboard-row {
+        grid-template-columns: 45px 1fr 70px 70px;
+    }
+    .col-wins { display: none; }
+    .global-stats { grid-template-columns: 1fr; }
+    .tournoi-header h1 { font-size: 2rem; letter-spacing: 4px; }
+}
